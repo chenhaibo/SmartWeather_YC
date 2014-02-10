@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class Reachability;
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-
+{
+    @private
+     Reachability *hostReach;
+   
+}
 @property (strong, nonatomic) UIWindow *window;
-
+@property (nonatomic)BOOL isNetworkReachable;
 @end
